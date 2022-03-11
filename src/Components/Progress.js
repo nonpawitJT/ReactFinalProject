@@ -36,6 +36,7 @@ const ProgressBarStyled = styled.div`
             }
         }
     }
+   
 `;
 
 export default ProgressBar;

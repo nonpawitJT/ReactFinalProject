@@ -100,6 +100,11 @@ body{
       font-size: 1.7rem;
       color: var(--white-color);
     }
+   
+  }
+  ProductTable{
+    margin-top : 1rem;
+    margin-left : 1rem;
   }
 `;
 export default Globalstyed;

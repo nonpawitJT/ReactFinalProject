@@ -11,6 +11,16 @@ import {useEffect} from 'react'
 import ResumePage from "./Pages/ResumePage";
 
 import ContactPage from "./Pages/ContactPage";
+import ProductPage from "./Pages/ProductPage";
+import CartPage from "./Pages/CartPage";
+
+// redux setup
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from "./redux/reducers/index";
+const store = createStore(rootReducer)
+
+
 
 function App() {
 
@@ -34,6 +44,7 @@ function App() {
   }
 
   return (
+    <Provider store={store}>
     <div className="App">
       <Sidebar/>
     <MainContentStyled>
@@ -55,10 +66,13 @@ function App() {
        <Route path="/" exact><HomePage/></Route>
        <Route path="/about"><AboutPage/></Route>
        <Route path="/resume"><ResumePage/></Route>
+       <Route path="/product"><ProductPage/></Route>
        <Route path="/contact"><ContactPage/></Route>
+       <Route path="/cart"><CartPage/></Route>
      </Switching>
     </MainContentStyled>
     </div>
+    </Provider>
   );
 }
 const MainContentStyled = styled.main`
