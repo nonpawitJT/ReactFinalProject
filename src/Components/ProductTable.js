@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import styled from "styled-components";
+
 import { addToCart } from '../redux/actions/cartAction';
 import { useSelector,useDispatch } from 'react-redux';
 const ProductPage = () => {
@@ -61,7 +62,7 @@ const ProductPage = () => {
     }
 
     return (
-       
+        <TableStyled>
                     <table striped bordered hover>
                         <thead>
                             <tr>
@@ -86,9 +87,8 @@ const ProductPage = () => {
                                             <td> {p.view}</td>
                                             <td> <img src={p.picture} rounded width={60} /> </td>
                                             <td>
-                                                <Link to={`/detail/${p.id}/title/${p.title}`}>
-                                                    <button variant="outline-primary">Click </button>
-                                                </Link>
+                                             
+                                          
                                                 <button  variant="outline-warning" className="ml-2" onClick={()=> addCart(p)}>Buy </button>
                                             </td>
 
@@ -105,8 +105,43 @@ const ProductPage = () => {
 
                         </tbody>
                     </table>
-     
+                    </TableStyled>
     )
 }
+
+const TableStyled = styled.div`
+margin-top : 2rem;
+table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+   
+    color:var(--white-color);
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    
+    color: var(--white-color);
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  
+`;
 
 export default ProductPage

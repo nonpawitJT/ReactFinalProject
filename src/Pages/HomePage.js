@@ -8,16 +8,11 @@ const HomePage = () => {
         <HomePageStyled>
             <div className='typography'>
                 <h1>Hi I'm<span> Nonpawit Nittaworn</span></h1>
-                <p>Lorem Ipsum is simply dummy text of the
-                     printing and typesetting industry. Lo
-                     rem Ipsum has been the industry's standard 
-                     dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to
-                       make a type specimen book.</p>
+                <p>I am studying at Thai-Nichi Institute of Technology. since I was a kid Technology multimedia has been my passion. I always take my time to practice and learning about web developer and game design.</p>
                        <div className='icons'>
-                <div className='icon i-facebook'><FacebookIcon/></div>
-                <div className='icon i-github'><GitHubIcon/></div>
-                <div className='icon i-youtube'><YouTubeIcon/></div>
+                       <a href='https://www.facebook.com/TaN2554/'>  <div className='icon i-facebook'>  <FacebookIcon/> </div></a>
+                       <a href="https://github.com/nonpawitJT">  <div className='icon i-github'> <GitHubIcon/> </div></a>
+                       <a href='https://www.youtube.com/channel/UCfbK7xwffD8BQwnV3lcmDyw'>  <div className='icon i-youtube'> <YouTubeIcon/> </div></a>
             </div>
 
             </div>

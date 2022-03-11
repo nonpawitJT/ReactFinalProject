@@ -81,6 +81,7 @@ body{
      }
  }
  span{
+    font-size: 3.5rem;
      color: var(--primary-color);
  }
  .light-dark-mode{
@@ -102,9 +103,6 @@ body{
     }
    
   }
-  ProductTable{
-    margin-top : 1rem;
-    margin-left : 1rem;
-  }
+ 
 `;
 export default Globalstyed;

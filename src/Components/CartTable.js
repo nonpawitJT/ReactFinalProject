@@ -1,12 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import styled from "styled-components";
 
 export default function CartPage() {
     const cart = useSelector((state) => state.cartReducer.cart)
     const total = useSelector((state) => state.cartReducer.total)
 
     return (
-        <div>
+        <TableStyled>
               
               <table striped bordered hover>
                 <thead>
@@ -36,6 +37,40 @@ export default function CartPage() {
                   })}
                 </tbody>
               </table>
-              </div>
+              </TableStyled>
       );
 }
+const TableStyled = styled.div`
+margin-top : 2rem;
+table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+   
+    color:var(--white-color);
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    
+    color: var(--white-color);
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  
+`;
