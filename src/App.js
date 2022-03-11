@@ -10,6 +10,8 @@ import {useState} from 'react'
 import {useEffect} from 'react'
 import ResumePage from "./Pages/ResumePage";
 
+import ContactPage from "./Pages/ContactPage";
+
 function App() {
 
   const [theme,setTheme] = useState('dark-theme')
@@ -53,6 +55,7 @@ function App() {
        <Route path="/" exact><HomePage/></Route>
        <Route path="/about"><AboutPage/></Route>
        <Route path="/resume"><ResumePage/></Route>
+       <Route path="/contact"><ContactPage/></Route>
      </Switching>
     </MainContentStyled>
     </div>
