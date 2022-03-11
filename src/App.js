@@ -8,6 +8,7 @@ import Brightness4Icon from '@material-ui/icons/Brightness4'
 import {IconButton} from '@material-ui/core'
 import {useState} from 'react'
 import {useEffect} from 'react'
+import ResumePage from "./Pages/ResumePage";
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
      <Switching>
        <Route path="/" exact><HomePage/></Route>
        <Route path="/about"><AboutPage/></Route>
+       <Route path="/resume"><ResumePage/></Route>
      </Switching>
     </MainContentStyled>
     </div>

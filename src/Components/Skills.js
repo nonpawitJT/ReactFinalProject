@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
+import Title from '../Components/Title';
+import ProgressBar from './Progress';
+import {InnerLayout} from "../styles/Layout"
+
 
 function Skills() {
     return (
         <SkillsStyled>
             
-                <Title title={'My Skills'} span={'my skills'} />
+          
                 <InnerLayout>
                     <div className="skills">
                         <ProgressBar 

@@ -17,7 +17,11 @@ function ResumeItem({year, title, subTitle, text}) {
 }
 
 const ResumeItemStyled = styled.div`
-    display: flex;
+display: grid;
+width:100%;
+height:100%;
+grid-template-columns: 1fr 2fr;
+
     @media screen and (max-width: 421px){
         p, h5, h6{
             font-size: 80%;
