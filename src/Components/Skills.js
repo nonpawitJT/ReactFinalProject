@@ -13,19 +13,19 @@ function Skills() {
                 <InnerLayout>
                     <div className="skills">
                         <ProgressBar 
-                            title={'HTML5'}
+                            title={'English'}
+                            width={'80%'}
+                            text={'80%'}
+                        />
+                        <ProgressBar 
+                            title={'Video Editing'}
                             width={'70%'}
                             text={'70%'}
                         />
                         <ProgressBar 
-                            title={'CSS3'}
-                            width={'90%'}
-                            text={'90%'}
-                        />
-                        <ProgressBar 
                             title={'JAVASCRIPT'}
-                            width={'85%'}
-                            text={'85%'}
+                            width={'55%'}
+                            text={'55%'}
                         />
                         <ProgressBar 
                             title={'JAVA'}
@@ -34,18 +34,18 @@ function Skills() {
                         />
                         <ProgressBar 
                             title={'PYTHON'}
-                            width={'95%'}
-                            text={'95%'}
+                            width={'80%'}
+                            text={'80%'}
                         />
                         <ProgressBar 
                             title={'React JS'}
-                            width={'75%'}
-                            text={'75%'}
+                            width={'60%'}
+                            text={'60%'}
                         />
                         <ProgressBar 
                             title={'UNITY'}
-                            width={'75%'}
-                            text={'75%'}
+                            width={'85%'}
+                            text={'85%'}
                         />
                     </div>
                 </InnerLayout>

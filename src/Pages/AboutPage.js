@@ -18,10 +18,12 @@ const AboutPage = () => {
     </div>
     <div className="right-content">
         <h1>I'm <span>Nonpawit Nittaworn </span></h1>
-        <p>นักศึกษาสถาบันเทคโนโลยีไทย-ญี่ปุ่น สาขาวิชาเทคโนโลยีมัลติมิเดีย </p>
+        <p>นักศึกษาสถาบันเทคโนโลยีไทย-ญี่ปุ่น สาขาวิชาเทคโนโลยีมัลติมิเดีย
+          ชื่นชอบในการทำกิจกรรมนอกสถานที่มากๆ และ มีความฝันอยากจะทำเกมส์ และเขียนเว็บไซต์เป็นของตัวเองสักครั้ง </p>
         <p> NickName &nbsp; : Tan <br/>
             Age: 21 <br/>
-            Languages&nbsp;: Thai,Japanese<br/>
+            Languages&nbsp;: Thai,English<br/>
+            Favourite Color&nbsp;: Blue,Black<br/>
   
              </p>
     </div>
@@ -36,11 +38,11 @@ const AboutPage = () => {
 
 const AboutPageStyled = styled.div`
     display: flex;
-    padding-top : 20px;
+    padding-top : 40px;
     img{
        
-        width: 60%;
-        border-radius: 30%;
+        width: 80%;
+        border-radius: 10%;
     }
     .left-content{
         width: 50%;

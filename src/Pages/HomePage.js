@@ -23,7 +23,7 @@ const HomePage = () => {
 const HomePageStyled = styled.header`
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: relative;m
    
     .typography{
         position: absolute;
